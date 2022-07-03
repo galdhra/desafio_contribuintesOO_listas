@@ -34,11 +34,10 @@ public class Project {
 			double educationSpending = sc.nextDouble();
 			list.add(new TaxPayer(salaryIncome, serviceIncome, capitalIncome, healthSpending, educationSpending));
 		}
-		
-		
-		for(Object obj : list) {
+
+		for (Object obj : list) {
 			System.out.println();
-			System.out.println("Resumo do "+ (list.indexOf(obj) + 1) + "o contribuinte:");
+			System.out.println("Resumo do " + (list.indexOf(obj) + 1) + "o contribuinte:");
 			System.out.println(obj);
 		}
 

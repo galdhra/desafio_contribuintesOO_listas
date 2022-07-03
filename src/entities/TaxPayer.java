@@ -77,15 +77,10 @@ public class TaxPayer {
 	public Double netTax() {
 		return grossTax() - taxRebate();
 	}
-	
+
 	public String toString() {
-		return "Imposto bruto total: "
-				+ String.format("%.2f%n", grossTax())
-				+ "Abatimento: "
-				+ String.format("%.2f%n", taxRebate())
-			    + "Imposto devido: " 
-				+ String.format("%.2f%n", netTax());
+		return "Imposto bruto total: " + String.format("%.2f%n", grossTax()) + "Abatimento: "
+				+ String.format("%.2f%n", taxRebate()) + "Imposto devido: " + String.format("%.2f%n", netTax());
 	}
-	
-	
+
 }
